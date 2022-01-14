@@ -2,6 +2,45 @@
     text-align: center;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-input {
+    padding: 5px;
+    width: 40%;
+}
+
+.todo-button {
+    padding: 5px;
+}
+
+.select-todos {
+    padding: 5px;
+}
+
+.todo-list {
+    padding: 0;
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-item {
+    list-style-type: none;
+    border: 1px solid black;
+    width: 40%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.todo>button {
+    margin: 5px 0;
+}
+
 .App-header {
     background-color: #282c34;
     min-height: 100vh;
