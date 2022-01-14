@@ -3,7 +3,6 @@ import React, {useState} from 'react'
 const Form = ({inputText, setInputText, todos, setTodos}) => {
     
     const inputTextHandler = event => {
-        console.log(event.target.value);
         setInputText(event.target.value);
     }
 

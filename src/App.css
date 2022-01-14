@@ -37,6 +37,11 @@ form {
     margin: 5px 0;
 }
 
+.completed {
+    background-color: lime;
+    text-decoration: line-through;
+}
+
 .todo>button {
     margin: 5px 0;
     border: none;
