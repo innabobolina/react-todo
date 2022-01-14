@@ -17,8 +17,9 @@ const Form = ({inputText, setInputText, todos, setTodos}) => {
     return (
         <form onSubmit={submitTodoHandler}>
             <input onChange={inputTextHandler} 
-            value={inputText}
-                type="text" className="todo-input"/>
+                value={inputText}
+                type="text" className="todo-input"
+            />
             <button type="submit" className="todo-button">
                 <i class="fas fa-plus-square"></i>
             </button>
