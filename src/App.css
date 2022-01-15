@@ -2,9 +2,50 @@
     text-align: center;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, magenta 0%, yellow 50%, cyan 100%);
+    /* color: white; */
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+
 form {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+    /* min-height: 20vh; */
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    border: none;
+    background: white;
+    padding: 5px;
+}
+
+form button {
+    color: orangered;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: orangered;
+    color: white;
 }
 
 .todo-input {
@@ -27,26 +68,31 @@ form {
 .todo {
     display: flex;
     justify-content: center;
+    font-size: 1.5rem;
+    align-items: center;
 }
 
 .todo-item {
     list-style-type: none;
     border: 1px solid black;
-    width: 40%;
-    padding: 5px;
+    width: 50%;
+    padding: 6px;
     margin: 5px 0;
 }
 
 .completed {
     background-color: lime;
     text-decoration: line-through;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .todo>button {
     margin: 5px 0;
     border: none;
-    width: 30px;
+    /* width: 30px; */
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 .complete-btn {
@@ -55,6 +101,16 @@ form {
 
 .trash-btn {
     background-color: orangered;
+}
+
+
+/*CUSTOM SELECTOR */
+
+select {
+    outline: 0;
+    border: 0 !important;
+    color: orangered;
+    /* appearance: none; */
 }
 
 .App-header {
