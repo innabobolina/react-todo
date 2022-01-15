@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const Form = ({inputText, setInputText, todos, setTodos}) => {
+const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
     
     const inputTextHandler = event => {
         setInputText(event.target.value);
@@ -13,6 +13,11 @@ const Form = ({inputText, setInputText, todos, setTodos}) => {
         setInputText("");
     }
 
+    const statusHandler = event => {
+        console.log("statusHandler event: ", event.target.value, event);
+        setStatus(event.target.value);
+    }
+
     return (
         <form onSubmit={submitTodoHandler}>
             <input onChange={inputTextHandler} 
@@ -23,7 +28,7 @@ const Form = ({inputText, setInputText, todos, setTodos}) => {
                 <i class="fas fa-plus-square"></i>
             </button>
             <div className="todo-select">
-                <select name="todos" id="" className="select-todos">
+                <select onChange={statusHandler} name="todos" id="" className="select-todos">
                     <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="uncompleted">Uncompleted</option>

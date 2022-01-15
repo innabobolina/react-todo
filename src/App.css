@@ -40,6 +40,7 @@ form {
 .completed {
     background-color: lime;
     text-decoration: line-through;
+    opacity: 0.5;
 }
 
 .todo>button {
