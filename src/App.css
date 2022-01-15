@@ -103,14 +103,12 @@ form button:hover {
     background-color: orangered;
 }
 
-
-/*CUSTOM SELECTOR */
-
 select {
     outline: 0;
     border: 0 !important;
     color: orangered;
     /* appearance: none; */
+    margin: 1rem;
 }
 
 .App-header {
